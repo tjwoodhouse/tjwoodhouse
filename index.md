@@ -1,5 +1,7 @@
-% Translation, tools, and marginalia 
-% Ted J. Woodhouse
+---
+title: Translation, tools, and marginalia 
+author: Ted J. Woodhouse
+---
 
 Here you'll find ramblings about Bible translation and things related to it (Biblical languages, translation tools, biblical studies, tools for writing and communicating) and who knows what else. Ramblings and rants are virtually certain to occur.
 
