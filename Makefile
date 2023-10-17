@@ -4,7 +4,7 @@ CSS = writ.min.css
 # Rule for converting github flavored markdown to html5
 MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown_github+pandoc_title_block --to html5 --standalone 
 
-DEPLOY = docs 
+DEPLOY = docs
 # Deploy directory.
 # Excluded from source search. Prepended to all output files
 DEPLOY_DIRECTORY = ./$(DEPLOY)/
