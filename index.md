@@ -5,4 +5,4 @@
 
 * [Small tools](blog/post.html)
 * [Typst for presentations](blog/slides.html)
-* [Unseen Realm}(blog/unseen.html)
+* [Unseen Realm](blog/unseen.html)

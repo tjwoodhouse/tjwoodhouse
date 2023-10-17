@@ -2,7 +2,7 @@ TEMPLATE = ./template.tmp
 CSS = writ.min.css
 
 # Rule for converting github flavored markdown to html5
-MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown_github+pandoc_title_block --to html5 --standalone 
+MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown --to html5 --standalone 
 
 DEPLOY = docs
 # Deploy directory.

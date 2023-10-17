@@ -2,17 +2,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Nested One Deep and Converted</title>
+  <title>Small tools – the Swiss army knife of translation tools</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="/writ.min.css">
 </head>
 <body>
 <main>
 <header>
-<h1>Nested One Deep and Converted</h1>
+<h1>Small tools – the Swiss army knife of translation tools</h1>
 </header>
 <article>
-<p>Written in markdown, and living in /blog, right alongside <a href="static.html">this page</a>.</p>
+<p>Somewhere along the line I learned to write code - starting with
+Excel, Visual basic, C#, and then Python. Now I can fiddle in Javascript
+when necessary and with lots of looking things up.</p>
+<p>Python and Javascript are so useful for translation because they
+provide simple ways to create small tools to interact with data. Nodejs
+and Python make writing command line tools simple and easy.</p>
+<p>Data… There’s lots of data on the Bible. Some of it easy to access,
+some of it not. Thankfully James Tauber’s <a
+href="https://github.com/jtauber/vocabulary-tools">vocabulary-tools</a>
+contains a packages <code>gnt_data</code> that makes is easy to interact
+with the Greek New Testament.</p>
+<p>Using that package, I clobbed together a script to find verses
+containing lemmas and then print them in a simple string format where
+each book is separated by <code>;</code> and references within a book
+are separated by <code>,</code> which gives something like
+<code>MRK 1:1,2:1;JHN 14:1;ACT 1:1,2:2,5:4"</code>.</p>
+<p>I can then pipe this into a variety of other small tools. I have a
+bash script that takes this input and uses <a
+href="https://wiki.crosswire.org/Frontends:Diatheke">diatheke</a> to
+display each of these references in the translation of my choice,
+current Lexham English Bible, found in freely available <a
+href="https://www.crosswire.org/sword/modules/index.jsp">Sword
+modules</a>.</p>
+<p>I have a nodejs script that can parse USFM files using <a
+href="https://github.com/Bridgeconn/usfm-grammar">usfm-grammar</a> and
+display a list of references.</p>
+<h2 id="why-do-small-tools-matter">Why do small tools matter?</h2>
+<p><strong>They can do things more quickly or easily than Bible study
+websites and software.</strong> Looking up a list of verses usually
+requires looking at them one at a time. This is slow and tedious.</p>
+<p><strong>In some cases to do things that the software can’t
+do.</strong> I love Logos Bible Software, but to my knowledge it can’t
+read USFM files.</p>
+<p><strong>These small tools are also composable.</strong> Once script
+finds a list of where lemmas occur. One script displays a list of verses
+in Sword modules (diatheke) and one displays them in USFM files.</p>
+<p><strong>They are easily modified and extended.</strong> If I wanted
+my bash script to use diatheke to display multiple translations or to
+also display the Greek NT text, it would be as simple as copying bash
+script, copying the line that calls diatheke and changing what package
+diatheke displays.</p>
+<p><strong>They are sharable.</strong> With blogs and sites like GitHub,
+it’s easy to share scripts so they can be useful to others.</p>
+<p>Learning to write scripts is a learning curve, but it’s not
+impossible and is certainly easier than many of things we have to learn
+related to the Bible (Greek or Hebrew for example). Should you do so?
+Maybe? Maybe not?</p>
 </article>
 </main>
 </body>
