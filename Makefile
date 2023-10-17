@@ -2,7 +2,7 @@ TEMPLATE = ./template.tmp
 CSS = writ.min.css
 
 # Rule for converting github flavored markdown to html5
-MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown --to html5 --standalone 
+MARKDOWN := pandoc --template $(TEMPLATE) -c $(CSS) --from markdown --to html5 --standalone --bibliography ~/OneDrive/_Resources/tfh_2020_refs.json --citeproc --csl ~/OneDrive/_Resources/unified-style-sheet-for-linguistics.csl 
 
 DEPLOY = docs
 # Deploy directory.
