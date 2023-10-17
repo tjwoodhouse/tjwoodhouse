@@ -22,7 +22,7 @@ $highlighting-css$
   </style>
 $endif$
 $for(css)$
-  <link rel="stylesheet" href="/$css$">
+  <link rel="stylesheet" href="https://tjwoodhouse.github.io/tjwoodhouse/$css$">
 $endfor$
 </head>
 <body>
