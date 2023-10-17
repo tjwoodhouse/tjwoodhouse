@@ -39,6 +39,7 @@ $endif$
 $if(date)$
 <h3 class="date">$date$</h3>
 $endif$
+<a href="https://tjwoodhouse.github.io/tjwoodhouse/">Home</a>
 </header>
 $endif$
 $if(toc)$

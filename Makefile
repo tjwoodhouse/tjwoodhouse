@@ -37,7 +37,7 @@ ALL = $(call find_all,'*.*')
 # Non-identity types are types we want to process
 # anything in the deploy directory
 # and files we want to ignore:
-EXCLUDE_TYPES = $(PROCESS_TYPES) $(CONTROL_TYPES) $(DEPLOY_DIRECTORY)% $(SRC_CTL) ./%.DS_Store
+EXCLUDE_TYPES = $(PROCESS_TYPES) $(CONTROL_TYPES) $(DEPLOY_DIRECTORY)% $(SRC_CTL) ./%.DS_Store %.txt
 
 # filter out excluded types; everything else gets transfered as-is... "identity"
 ALL_IDENTITY := $(call map,filter-out,$(EXCLUDE_TYPES),$(ALL))
@@ -71,8 +71,16 @@ $(addprefix $(DEPLOY_DIRECTORY),%.css): %.css
 	@mkdir -p $(dir $@)
 	@cp $< $@
 
+$(addprefix $(DEPLOY_DIRECTORY),%.pdf): %.pdf
+	@echo Moving $< to $@
+	@mkdir -p $(dir $@)
+	@cp $< $@
+
+
+
+
 REMOTE = github
-BRANCH = gh-pages
+BRANCH = master
 
 deploy: bake
 	git add $(DEPLOY)

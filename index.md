@@ -9,6 +9,7 @@ Here you'll find ramblings about Bible translation and things related to it (Bib
 * [Typst for presentations](blog/slides.html)
 * [Unseen Realm](blog/unseen.html)
 * [Cult of Done](blog/cult-of-done.html)
+* [Greek Imperfect verb aspect coercion paper](blog/coercion-paper.html)
 
 # Some things I'm keeping an eye on
 
