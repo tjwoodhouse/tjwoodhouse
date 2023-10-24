@@ -7,7 +7,7 @@ I'm working multiple teams at the moment and when I come back to review answers 
 This means that shorter, simpler notes that are well structured and easy to get this gist of are more helpful. I suggest that using tags for parts of the notes could be helpful. Something like the following could be a useful template. 
 
 ```
-Category: Accuracy|Clarify|Naturalness|Acceptability
+Category: Accuracy|Clarity|Naturalness|Acceptability
 Text: 
 Summary/Issue: 
 Details: 
